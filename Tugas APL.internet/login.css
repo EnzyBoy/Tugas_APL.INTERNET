@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+:root{
+    --primary:#ff3b30;
+    --dark:#0f0f0f;
+    --card:#1c1c1c;
+    --text:#ffffff;
+    --muted:#bdbdbd;
+}
+
+
+body{
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.75),
+    rgba(0,0,0,.75)),
+    url("enzy.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+
+.login-container{
+    width:100%;
+    padding:20px;
+}
+
+
+.login-box{
+    width:100%;
+    max-width:420px;
+
+    margin:auto;
+
+    background:rgba(28,28,28,.95);
+
+    padding:45px 35px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.45);
+
+    text-align:center;
+
+    backdrop-filter:blur(12px);
+}
+
+
+.login-box h2{
+    font-size:38px;
+    color:var(--text);
+
+    margin-bottom:10px;
+}
+
+.login-box p{
+    color:var(--muted);
+    margin-bottom:35px;
+}
+
+
+.input-box{
+    width:100%;
+    height:55px;
+
+    background:#2a2a2a;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:12px;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 18px;
+
+    margin-bottom:20px;
+
+    transition:.3s;
+}
+
+.input-box:focus-within{
+    border-color:var(--primary);
+
+    box-shadow:
+    0 0 15px rgba(255,59,48,.2);
+}
+
+.input-box i{
+    color:var(--primary);
+    font-size:18px;
+    margin-right:12px;
+}
+
+.input-box input{
+    width:100%;
+
+    border:none;
+    outline:none;
+
+    background:none;
+
+    color:white;
+    font-size:16px;
+}
+
+.input-box input::placeholder{
+    color:#888;
+}
+
+button{
+    width:100%;
+    height:55px;
+
+    border:none;
+    border-radius:12px;
+
+    background:var(--primary);
+    color:white;
+
+    font-size:18px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 10px 25px rgba(255,59,48,.35);
+}
+
+
+.extra{
+    margin-top:20px;
+}
+
+.extra a{
+    color:var(--primary);
+    text-decoration:none;
+    font-size:15px;
+    transition:.3s;
+}
+
+.extra a:hover{
+    opacity:.8;
+}
+
+@media(max-width:500px){
+
+    .login-box{
+        padding:35px 25px;
+    }
+
+    .login-box h2{
+        font-size:32px;
+    }
+}
